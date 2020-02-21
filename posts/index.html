@@ -101,11 +101,11 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      如何用 hugo 搭建个人博客 第一步：安装Hugo  Mac下直接使用 Homebrew 安装： brew install hugo  Windows安装方式   下载地址 点击进入下载页面下载 hugo_0.65.1_Windows-64bit.zip（0.65.1版本号可以不同） 解压，把hugo.exe放到本地，例如我的本地地址：D:\Software\hugo，再把这个地址加到全局变量PATH里(不会加可以自行搜索) 重启终端，运行查看版本，确认是否配置成功 hugo version   第二步：快速搭建博客 第一种方式 进入官网，点击Quick Start快速开始，从step2到step7跟着操作
-第二种方式 跟着我复制
- hugo new site quickstart cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml hugo new posts/我的第一篇博客.md 完成上面步骤后，得到一个public目录，这就是我们的博客站点，执行下面语句可以预览非草稿
- hugo server 注意事项  上面的命令，其中下面这句新建一篇博客之后   hugo new posts/我的第一篇博客.md 文件里面会自带这些内容
- --- title: &quot;My First Post&quot; date: 2019-03-26T08:47:11+01:00 draft: true --- 其中draft: true 修改成 draft: false，把文件设置成非草稿文件，方便预览 2.
+      如何用 hugo 搭建个人博客 第一步：安装Hugo  Mac下直接使用 Homebrew 安装： brew install hugo  Windows安装方式   下载地址 点击进入下载页面下载 hugo_0.65.1_Windows-64bit.zip（0.65.1版本号可以不同） 解压，把hugo.exe放到本地，例如我的本地地址：D:\Software\hugo，再把这个地址加到全局变量PATH里(不会加可以自行搜索) 重启终端，运行查看版本，确认是否配置成功 hugo version   第二步：快速搭建博客  第一种方式  进入官网，点击Quick Start快速开始，从step2到step7跟着操作
+  第二种方式
+跟着我复制
+ ``` hugo new site quickstart cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml hugo new posts/我的第一篇博客.md ```  完成上面步骤后，得到一个public目录，这就是我们的博客站点，执行下面语句可以预览非草稿
+ ``` hugo server ```    注意事项   上面的命令，其中下面这句新建一篇博客之后
     </div>
   </div>
 </div>
