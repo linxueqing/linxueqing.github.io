@@ -6,10 +6,33 @@
     <description>Recent content on 以梦为马</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 23 Feb 2020 22:49:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2020 22:09:57 +0800</lastBuildDate>
     
 	<atom:link href="https://linxueqing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Css01</title>
+      <link>https://linxueqing.github.io/posts/css01/</link>
+      <pubDate>Sun, 01 Mar 2020 22:09:57 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/css01/</guid>
+      <description>CSS 定位 在了解 CSS 定位之前，先问个问题，CSS 布局和定位有什么区别？
+区别大了！！ 布局是屏幕平面上的，定位是垂直于屏幕的。
+这还要从盒模型和文档流开始说起 盒模型 盒模型什么样的？从外面到里面依次是：
+ margin border padding content  第一种盒模型，浏览器算的宽度是 内容宽度 box-sizing:content-box; 第二种盒模型，浏览器算的宽度是 border+padding+内容宽度 box-sizing:border-box; 文档流 标准文档流 元素排版布局过程中，元素会默认自动从左往右，从上往下的流式排列方式。
+正常文档流的元素是怎么垂直于屏幕分层的呢？从上向下一次是？  内联子元素 块级子元素 border background  那脱离文档流的元素呢？ 先了解下，CSS中哪些属性会让元素脱离文档流
+ float absolute fixed  在脱离文档流元素的影响下，新的垂直于屏幕分层情况如下：  定位元素 内联子元素 float 块级子元素 border background z-index 为负数  </description>
+    </item>
+    
+    <item>
+      <title>Html03</title>
+      <link>https://linxueqing.github.io/posts/html03/</link>
+      <pubDate>Mon, 24 Feb 2020 11:29:34 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/html03/</guid>
+      <description>蒋勋 </description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>
@@ -61,15 +84,6 @@ HTML 的英文全称是 Hypertext Marked Language，即超文本标记语言。H
       
       <guid>https://linxueqing.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
       <description>大家好 我的博客开通了</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://linxueqing.github.io/posts/iii/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linxueqing.github.io/posts/iii/</guid>
-      <description></description>
     </item>
     
   </channel>
