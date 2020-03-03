@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://linxueqing.github.io/posts/css01/</loc>
-    <lastmod>2020-03-01T22:09:57+08:00</lastmod>
+    <loc>https://linxueqing.github.io/posts/</loc>
+    <lastmod>2020-03-03T21:53:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://linxueqing.github.io/posts/</loc>
-    <lastmod>2020-03-01T22:09:57+08:00</lastmod>
+    <loc>https://linxueqing.github.io/posts/url/</loc>
+    <lastmod>2020-03-03T21:53:05+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://linxueqing.github.io/</loc>
+    <lastmod>2020-03-03T21:53:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linxueqing.github.io/posts/css01/</loc>
     <lastmod>2020-03-01T22:09:57+08:00</lastmod>
   </url>
   
