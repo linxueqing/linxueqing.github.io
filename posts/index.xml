@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 以梦为马</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 07 Mar 2020 11:22:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 18:50:47 +0800</lastBuildDate>
     
 	<atom:link href="https://linxueqing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Js对象基本用法</title>
+      <link>https://linxueqing.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sat, 07 Mar 2020 18:50:47 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>Js 对象基本用法 1：声明对象的两种语法 let obj1 = new Object({&#39;name&#39;:&#39;Jerry&#39;}); //标准写法 let obj2={&#39;name&#39;:&#39;Tom&#39;}; //常用写法 2：如何删除对象的属性 let obj={&#39;name&#39;:&#39;Tom&#39;,&#39;age&#39;:18}; delete obj[&#39;name&#39;]; //删除name属性 3：如何查看对象的属性 let obj={&#39;name&#39;:&#39;Tom&#39;}; Object.keys(obj); //查看对象属性 Object.values(obj); //查看对象值 Object.entries(obj); //查看对象 console.dir(obj); //查看对象 只查看属性
+let obj={&#39;name&#39;:&#39;Tom&#39;}; obj[&#39;name&#39;]; obj.name 4：如何修改或增加对象的属性 属性存在就是在修改，不存在就是在增加
+let obj={&#39;name&#39;:&#39;Tom&#39;}; obj[&#39;name&#39;] = &#39;Jack&#39;; Object.assign(obj,{p:1,p1:2}); let common = {&#39;国籍&#39;,&#39;中国&#39;}; let person = Object.create(common); 5：&amp;lsquo;name&amp;rsquo; in obj 和 obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 的区别  &amp;lsquo;name&amp;rsquo; in obj 判断obj对象是否存在name属性 obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;)判断name是不是自有属性  </description>
+    </item>
     
     <item>
       <title>Js的基本语法</title>
