@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/posts/" />
-<meta property="og:updated_time" content="2020-03-10T22:51:15+08:00" />
+<meta property="og:updated_time" content="2020-03-16T20:02:09+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -91,6 +91,21 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/" class="link black dim">
+        如何理解递归
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      如何理解递归  判断两个数的大小  let minOf2 = (numbers) =&gt; { if(numbers[0] &lt; numbers[1]){ return numbers[0] }else{ return numbers[1] } }  你可以简写为  let minOf2 = numbers =&gt; numbers[0] &lt; numbers[1] ? numbers[0] : numbers[1]  或者再简写为  let minOf2 = ([a, b]) =&gt; a &lt; b ? a : b //这种写法叫析构赋值 现成的 API, JS 内置了 Math 对象 Math.min  三个数找出最小的那个  let minOf3 = ([a,b,c]) =&gt; { return minOf2([a, minOf2([b,c])]) }  四个数找出最小的那个  let minOf4 = ([a,b,c,d]) =&gt; { return minOf2([a, minOf3([b,c,d])]) }  任意长度数组求最小值  let min = (numbers) =&gt; { return min([numbers[0], min(numbers.
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
@@ -257,25 +272,6 @@ HTML 的英文全称是 Hypertext Marked Language，即超文本标记语言。H
   &lt;!DOCTYPE html&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; &lt;title&gt;标题&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt;  常用的表章节的标签有哪些，分别是什么意思（h1~h6、section、article、main、aside 等等）
  h1~h6 标题 section 章节 article 文章 main 页面主要内容 aside 页面次要内容    全局属性有哪些?
 所有标签都有的属性
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linxueqing.github.io/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="link black dim">
-        如何用 hugo 搭建个人博客
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      如何用 hugo 搭建个人博客 第一步：安装Hugo  Mac下直接使用 Homebrew 安装： brew install hugo  Windows安装方式   下载地址 点击进入下载页面下载 hugo_0.65.1_Windows-64bit.zip（0.65.1版本号可以不同） 解压，把hugo.exe放到本地，例如我的本地地址：D:\Software\hugo，再把这个地址加到全局变量PATH里(不会加可以自行搜索) 重启终端，运行查看版本，确认是否配置成功 hugo version   第二步：快速搭建博客  第一种方式  进入官网，点击Quick Start快速开始，从step2到step7跟着操作
-  第二种方式
-跟着我复制
- ``` hugo new site quickstart cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml hugo new posts/我的第一篇博客.md ```  完成上面步骤后，得到一个public目录，这就是我们的博客站点，执行下面语句可以预览非草稿
- ``` hugo server ```    注意事项   上面的命令，其中下面这句新建一篇博客之后
     </div>
   </div>
 </div>

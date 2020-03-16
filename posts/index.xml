@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 以梦为马</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 10 Mar 2020 22:51:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 20:02:09 +0800</lastBuildDate>
     
 	<atom:link href="https://linxueqing.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何理解递归</title>
+      <link>https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/</link>
+      <pubDate>Mon, 16 Mar 2020 20:02:09 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/</guid>
+      <description>如何理解递归  判断两个数的大小  let minOf2 = (numbers) =&amp;gt; { if(numbers[0] &amp;lt; numbers[1]){ return numbers[0] }else{ return numbers[1] } }  你可以简写为  let minOf2 = numbers =&amp;gt; numbers[0] &amp;lt; numbers[1] ? numbers[0] : numbers[1]  或者再简写为  let minOf2 = ([a, b]) =&amp;gt; a &amp;lt; b ? a : b //这种写法叫析构赋值 现成的 API, JS 内置了 Math 对象 Math.min  三个数找出最小的那个  let minOf3 = ([a,b,c]) =&amp;gt; { return minOf2([a, minOf2([b,c])]) }  四个数找出最小的那个  let minOf4 = ([a,b,c,d]) =&amp;gt; { return minOf2([a, minOf3([b,c,d])]) }  任意长度数组求最小值  let min = (numbers) =&amp;gt; { return min([numbers[0], min(numbers.</description>
+    </item>
     
     <item>
       <title>JS 函数的执行时机</title>
