@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/posts/" />
-<meta property="og:updated_time" content="2020-03-16T20:02:09+08:00" />
+<meta property="og:updated_time" content="2020-03-23T22:56:15+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -91,6 +91,40 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linxueqing.github.io/posts/jquery/" class="link black dim">
+        jQuery 的常用功能
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      jQuery 的常用功能  jQuery 如何获取元素  　//选择表达式可以是CSS选择器： $(document) //选择整个文档对象 $('#myId') //选择ID为myId的网页元素 $('div.myClass') // 选择class为myClass的div元素 $('input[name=first]') // 选择name属性等于first的input元素 //也可以是jQuery特有的表达式： $('a:first') //选择网页中第一个a元素 $('tr:odd') //选择表格的奇数行 $('#myForm :input') // 选择表单中的input元素 $('div:visible') //选择可见的div元素 $('div:gt(2)') // 选择所有的div元素，除了前三个 $('div:animated') // 选择当前处于动画状态的div元素 jQuery 的链式操作是怎样的  就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来
+$('div').find('h3').eq(2).html('Hello'); 分解开来：
+$('div') //找到div元素 .find('h3') //选择其中的h3元素 .eq(2) //选择第3个h3元素 .html('Hello'); //将它的内容改为Hello  jQuery 如何创建元素
+创建新元素的方法非常简单，只要把新元素直接传入 jQuery 的构造函数就行
+  $('&lt;p&gt;Hello&lt;/p&gt;'); $('&lt;li class=&quot;new&quot;&gt;new list item&lt;/li&gt;'); $('ul').append('&lt;li&gt;list item&lt;/li&gt;'); jQuery 如何移动元素  第一种方法是使用.insertAfter()，把 div 元素移动 p 元素后面：
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linxueqing.github.io/posts/sort/" class="link black dim">
+        四种排序算法
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      四种排序算法  选择排序  //循环里第i个数字与最小数字交换顺序 let swap = (array, i, j) =&gt; { let temp = array[i] array[i] = array[j] array[j] = temp } //找到数组最小数字的索引，index一直标记着 let minIndex = (numbers) =&gt; { let index = 0 for(let i=1; i&lt;numbers.length; i++){ if(numbers[i] &lt; numbers[index]){ index = i } } return index } let sort = (numbers) =&gt; { for(let i=0; i&lt; numbers.length -1; i++){ console.log(numbers,i,numbers.slice(i),) let index = minIndex(numbers.slice(i))+ i if(index!==i){ swap(numbers, index, i) } } return numbers } console.
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
@@ -230,48 +264,6 @@ nslookup 询问服务器 IP 命令使用方法
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       蒋勋 
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linxueqing.github.io/posts/html02/" class="link black dim">
-        HTML常用标签
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      HTML 常用标签  a 标签的用法  可以创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接。
-&lt;ul&gt; &lt;li&gt;&lt;a href=&quot;https://example.com&quot;&gt;Website&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;mailto:m.bluth@example.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;tel:+123456789&quot;&gt;Phone&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt;  img 标签的用法
-将一份图像嵌入文档
-  &lt;img class=&quot;picture&quot; src=&quot;/images/332.jpg&quot; alt=&quot;dog&quot;&gt;  table 标签的用法
-表示表格数据 — 即通过二维数据表表示的信息。
-  &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th colspan=&quot;2&quot;&gt;The table header&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;The table body&lt;/td&gt; &lt;td&gt;with two columns&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;  其他感想
-HTML 标签学习的最好用法就是多练习，直接运行查看不同标签属性效果，加深印象
-  
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linxueqing.github.io/posts/html01/" class="link black dim">
-        HTML入门笔记1
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      HTML 入门笔记 1   HTML 是谁发明的
-HTML 的英文全称是 Hypertext Marked Language，即超文本标记语言。HTML 是由 Web 的发明者 Tim Berners-Lee 和同事 Daniel W. Connolly 于 1990 年创立的一种标记语言，它是标准通用化标记语言 SGML 的应用。
-  HTML 起手应该写什么
-  &lt;!DOCTYPE html&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; &lt;title&gt;标题&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt;  常用的表章节的标签有哪些，分别是什么意思（h1~h6、section、article、main、aside 等等）
- h1~h6 标题 section 章节 article 文章 main 页面主要内容 aside 页面次要内容    全局属性有哪些?
-所有标签都有的属性
     </div>
   </div>
 </div>

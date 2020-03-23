@@ -6,10 +6,32 @@
     <description>Recent content on 以梦为马</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 16 Mar 2020 20:02:09 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 22:56:15 +0800</lastBuildDate>
     
 	<atom:link href="https://linxueqing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jQuery 的常用功能</title>
+      <link>https://linxueqing.github.io/posts/jquery/</link>
+      <pubDate>Mon, 23 Mar 2020 22:56:15 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/jquery/</guid>
+      <description>jQuery 的常用功能  jQuery 如何获取元素  　//选择表达式可以是CSS选择器： $(document) //选择整个文档对象 $(&#39;#myId&#39;) //选择ID为myId的网页元素 $(&#39;div.myClass&#39;) // 选择class为myClass的div元素 $(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素 //也可以是jQuery特有的表达式： $(&#39;a:first&#39;) //选择网页中第一个a元素 $(&#39;tr:odd&#39;) //选择表格的奇数行 $(&#39;#myForm :input&#39;) // 选择表单中的input元素 $(&#39;div:visible&#39;) //选择可见的div元素 $(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个 $(&#39;div:animated&#39;) // 选择当前处于动画状态的div元素 jQuery 的链式操作是怎样的  就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来
+$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;); 分解开来：
+$(&#39;div&#39;) //找到div元素 .find(&#39;h3&#39;) //选择其中的h3元素 .eq(2) //选择第3个h3元素 .html(&#39;Hello&#39;); //将它的内容改为Hello  jQuery 如何创建元素
+创建新元素的方法非常简单，只要把新元素直接传入 jQuery 的构造函数就行
+  $(&#39;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&#39;); $(&#39;&amp;lt;li class=&amp;quot;new&amp;quot;&amp;gt;new list item&amp;lt;/li&amp;gt;&#39;); $(&#39;ul&#39;).append(&#39;&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;&#39;); jQuery 如何移动元素  第一种方法是使用.insertAfter()，把 div 元素移动 p 元素后面：</description>
+    </item>
+    
+    <item>
+      <title>四种排序算法</title>
+      <link>https://linxueqing.github.io/posts/sort/</link>
+      <pubDate>Wed, 18 Mar 2020 22:14:46 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/sort/</guid>
+      <description>四种排序算法  选择排序  //循环里第i个数字与最小数字交换顺序 let swap = (array, i, j) =&amp;gt; { let temp = array[i] array[i] = array[j] array[j] = temp } //找到数组最小数字的索引，index一直标记着 let minIndex = (numbers) =&amp;gt; { let index = 0 for(let i=1; i&amp;lt;numbers.length; i++){ if(numbers[i] &amp;lt; numbers[index]){ index = i } } return index } let sort = (numbers) =&amp;gt; { for(let i=0; i&amp;lt; numbers.length -1; i++){ console.log(numbers,i,numbers.slice(i),) let index = minIndex(numbers.slice(i))+ i if(index!==i){ swap(numbers, index, i) } } return numbers } console.</description>
+    </item>
     
     <item>
       <title>如何理解递归</title>
