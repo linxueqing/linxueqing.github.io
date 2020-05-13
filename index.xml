@@ -6,10 +6,24 @@
     <description>Recent content on 以梦为马</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 23 Mar 2020 22:56:15 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 21:36:54 +0800</lastBuildDate>
     
 	<atom:link href="https://linxueqing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MVC总结</title>
+      <link>https://linxueqing.github.io/posts/mvc/</link>
+      <pubDate>Wed, 06 May 2020 21:36:54 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/mvc/</guid>
+      <description>MVC 总结   MVC 三个对象分别做什么
+M-Model（数据模型）数据以及对数据的增删查改
+const m = { data:{ n:0 }, create(){}, delete(){}, update(data){}, get(){} } V-View（视图模型）负责所有的 UI 界面
+const v={ el:null, html:` &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; `, init(container){ v.el=container }, render(n){ if(v.el.children.length!==0)v.el.empty() $(v.html.replace(&#39;{{n}}&#39;,n)).appendTo(v.el) } } C-Controller（控制器）负责其他
+const c={ init(){ }, events:{ &#39;click #add1&#39;:&#39;add&#39; }, add(){ m.update(data:{ n:m.data.n+1}) } }   EventBus 有哪些 API，是做什么用的，给出伪代码示例
+   import $ from &#39;jquery&#39; class EventBus{ constructor(){ this._eventBus=$(window) } on(eventName,fn){ return this._eventBus.on(eventName,fn) } trigger(eventName,data){ return this.</description>
+    </item>
     
     <item>
       <title>jQuery 的常用功能</title>

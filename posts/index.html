@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/posts/" />
-<meta property="og:updated_time" content="2020-03-23T22:56:15+08:00" />
+<meta property="og:updated_time" content="2020-05-06T21:36:54+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -91,6 +91,26 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linxueqing.github.io/posts/mvc/" class="link black dim">
+        MVC总结
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      MVC 总结   MVC 三个对象分别做什么
+M-Model（数据模型）数据以及对数据的增删查改
+const m = { data:{ n:0 }, create(){}, delete(){}, update(data){}, get(){} } V-View（视图模型）负责所有的 UI 界面
+const v={ el:null, html:` &lt;div&gt;&lt;/div&gt; `, init(container){ v.el=container }, render(n){ if(v.el.children.length!==0)v.el.empty() $(v.html.replace('{{n}}',n)).appendTo(v.el) } } C-Controller（控制器）负责其他
+const c={ init(){ }, events:{ 'click #add1':'add' }, add(){ m.update(data:{ n:m.data.n+1}) } }   EventBus 有哪些 API，是做什么用的，给出伪代码示例
+   import $ from 'jquery' class EventBus{ constructor(){ this._eventBus=$(window) } on(eventName,fn){ return this._eventBus.on(eventName,fn) } trigger(eventName,data){ return this.
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
@@ -249,21 +269,6 @@ nslookup 询问服务器 IP 命令使用方法
  margin border padding content  第一种盒模型，浏览器算的宽度是 内容宽度 box-sizing:content-box; 第二种盒模型，浏览器算的宽度是 border+padding+内容宽度 box-sizing:border-box; 文档流 标准文档流 元素排版布局过程中，元素会默认自动从左往右，从上往下的流式排列方式。
 正常文档流的元素是怎么垂直于屏幕分层的呢？从上向下一次是？  内联子元素 块级子元素 border background  那脱离文档流的元素呢？ 先了解下，CSS中哪些属性会让元素脱离文档流
  float absolute fixed  在脱离文档流元素的影响下，新的垂直于屏幕分层情况如下：  定位元素 内联子元素 float 块级子元素 border background z-index 为负数  
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linxueqing.github.io/posts/html03/" class="link black dim">
-        Html03
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      蒋勋 
     </div>
   </div>
 </div>

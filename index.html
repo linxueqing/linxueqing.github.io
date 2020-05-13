@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/" />
-<meta property="og:updated_time" content="2020-03-23T22:56:15+08:00" />
+<meta property="og:updated_time" content="2020-05-06T21:36:54+08:00" />
 <meta itemprop="name" content="以梦为马">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="以梦为马"/>
@@ -122,6 +122,35 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linxueqing.github.io/posts/mvc/" class="color-inherit dim link">
+            MVC总结
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          MVC 总结   MVC 三个对象分别做什么
+M-Model（数据模型）数据以及对数据的增删查改
+const m = { data:{ n:0 }, create(){}, delete(){}, update(data){}, get(){} } V-View（视图模型）负责所有的 UI 界面
+const v={ el:null, html:` &lt;div&gt;&lt;/div&gt; `, init(container){ v.el=container }, render(n){ if(v.el.children.length!==0)v.el.empty() $(v.html.replace('{{n}}',n)).appendTo(v.el) } } C-Controller（控制器）负责其他
+const c={ init(){ }, events:{ 'click #add1':'add' }, add(){ m.update(data:{ n:m.data.n+1}) } }   EventBus 有哪些 API，是做什么用的，给出伪代码示例
+   import $ from 'jquery' class EventBus{ constructor(){ this._eventBus=$(window) } on(eventName,fn){ return this._eventBus.on(eventName,fn) } trigger(eventName,data){ return this.
+        </div>
+          <a href="https://linxueqing.github.io/posts/mvc/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://linxueqing.github.io/posts/jquery/" class="color-inherit dim link">
             jQuery 的常用功能
             </a>
@@ -166,36 +195,18 @@ $('div') //找到div元素 .find('h3') //选择其中的h3元素 .eq(2) //选择
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/" class="color-inherit dim link">
-            如何理解递归
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          如何理解递归  判断两个数的大小  let minOf2 = (numbers) =&gt; { if(numbers[0] &lt; numbers[1]){ return numbers[0] }else{ return numbers[1] } }  你可以简写为  let minOf2 = numbers =&gt; numbers[0] &lt; numbers[1] ? numbers[0] : numbers[1]  或者再简写为  let minOf2 = ([a, b]) =&gt; a &lt; b ? a : b //这种写法叫析构赋值 现成的 API, JS 内置了 Math 对象 Math.min  三个数找出最小的那个  let minOf3 = ([a,b,c]) =&gt; { return minOf2([a, minOf2([b,c])]) }  四个数找出最小的那个  let minOf4 = ([a,b,c,d]) =&gt; { return minOf2([a, minOf3([b,c,d])]) }  任意长度数组求最小值  let min = (numbers) =&gt; { return min([numbers[0], min(numbers.
-        </div>
-          <a href="https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/" class="link black dim">
+              如何理解递归
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linxueqing.github.io/posts/js0310/" class="link black dim">
@@ -212,12 +223,6 @@ $('div') //找到div元素 .find('h3') //选择其中的h3元素 .eq(2) //选择
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linxueqing.github.io/posts/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="link black dim">
               Js的基本语法
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linxueqing.github.io/posts/javascript%E8%AF%9E%E7%94%9F%E5%B9%B4%E9%89%B4/" class="link black dim">
-              JavaScript诞生年鉴
             </a>
           </h2>
         
