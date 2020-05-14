@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/" />
-<meta property="og:updated_time" content="2020-05-06T21:36:54+08:00" />
+<meta property="og:updated_time" content="2020-05-14T21:32:17+08:00" />
 <meta itemprop="name" content="以梦为马">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="以梦为马"/>
@@ -122,6 +122,36 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linxueqing.github.io/posts/vue/" class="color-inherit dim link">
+            浅析 Vue 两个版本的区别和使用方法
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          浅析 Vue 两个版本的区别和使用方法   两个版本对应的文件名
+分别是 Vue 完整版（vue.js）和 Vue（vue.runtime.js ）非完整版
+  template 和 render 怎么用
+render 不需要编译器
+new Vue({ render(h){ return h('div',this.hi) } }) template 需要编译器
+new Vue({ template:'&lt;div&gt;{{hi}&lt;/div&gt;' })   如何用 codesandbox.io 写 Vue 代码
+ 进入 codesandbox.io，不要登陆 点击 create sandbox 按钮，选择 vue 模板 可以直接修改保存 也可也 File-Export to Zip 导出你的 Vue 项目    
+        </div>
+          <a href="https://linxueqing.github.io/posts/vue/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://linxueqing.github.io/posts/mvc/" class="color-inherit dim link">
             MVC总结
             </a>
@@ -171,36 +201,18 @@ $('div') //找到div元素 .find('h3') //选择其中的h3元素 .eq(2) //选择
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linxueqing.github.io/posts/sort/" class="color-inherit dim link">
-            四种排序算法
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          四种排序算法  选择排序  //循环里第i个数字与最小数字交换顺序 let swap = (array, i, j) =&gt; { let temp = array[i] array[i] = array[j] array[j] = temp } //找到数组最小数字的索引，index一直标记着 let minIndex = (numbers) =&gt; { let index = 0 for(let i=1; i&lt;numbers.length; i++){ if(numbers[i] &lt; numbers[index]){ index = i } } return index } let sort = (numbers) =&gt; { for(let i=0; i&lt; numbers.length -1; i++){ console.log(numbers,i,numbers.slice(i),) let index = minIndex(numbers.slice(i))+ i if(index!==i){ swap(numbers, index, i) } } return numbers } console.
-        </div>
-          <a href="https://linxueqing.github.io/posts/sort/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linxueqing.github.io/posts/sort/" class="link black dim">
+              四种排序算法
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/" class="link black dim">
@@ -217,12 +229,6 @@ $('div') //找到div元素 .find('h3') //选择其中的h3元素 .eq(2) //选择
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linxueqing.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="link black dim">
               Js对象基本用法
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linxueqing.github.io/posts/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="link black dim">
-              Js的基本语法
             </a>
           </h2>
         
