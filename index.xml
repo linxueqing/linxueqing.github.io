@@ -6,10 +6,28 @@
     <description>Recent content on 以梦为马</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 14 May 2020 21:32:17 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 22:13:58 +0800</lastBuildDate>
     
 	<atom:link href="https://linxueqing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue中computed和watch的区别</title>
+      <link>https://linxueqing.github.io/posts/vue2/</link>
+      <pubDate>Wed, 20 May 2020 22:13:58 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/vue2/</guid>
+      <description>Vue 中 computed 和 watch 的区别  computed 是计算属性，watch 是监听 computed 的值不需要加括号，可以直接当属性用 computed 的计算结果会自动缓存 watch 有一个选项 immediate 在最初绑定的时候就执行 watch 还有一个选项 deep 代表是否深度监听  </description>
+    </item>
+    
+    <item>
+      <title>说说对 Vue 数据响应式的理解</title>
+      <link>https://linxueqing.github.io/posts/vue1/</link>
+      <pubDate>Mon, 18 May 2020 22:37:41 +0800</pubDate>
+      
+      <guid>https://linxueqing.github.io/posts/vue1/</guid>
+      <description>说说对 Vue 数据响应式的理解 const vm =new Vue({data:{n:0}})  data 会被 Vue 监听，被篡改，本来的 n 会变成 get n ,set n vm 是对 Vue 的代理，每次对 data 的读写都会被 Vue 监控，不论是读写 data 本身，还是读写 data 的代理 Vue 会在 data 变化的时候更新 UI  </description>
+    </item>
     
     <item>
       <title>浅析 Vue 两个版本的区别和使用方法</title>

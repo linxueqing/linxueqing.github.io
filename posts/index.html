@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/posts/" />
-<meta property="og:updated_time" content="2020-05-14T21:32:17+08:00" />
+<meta property="og:updated_time" content="2020-05-20T22:13:58+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -91,6 +91,36 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linxueqing.github.io/posts/vue2/" class="link black dim">
+        Vue中computed和watch的区别
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Vue 中 computed 和 watch 的区别  computed 是计算属性，watch 是监听 computed 的值不需要加括号，可以直接当属性用 computed 的计算结果会自动缓存 watch 有一个选项 immediate 在最初绑定的时候就执行 watch 还有一个选项 deep 代表是否深度监听  
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linxueqing.github.io/posts/vue1/" class="link black dim">
+        说说对 Vue 数据响应式的理解
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      说说对 Vue 数据响应式的理解 const vm =new Vue({data:{n:0}})  data 会被 Vue 监听，被篡改，本来的 n 会变成 get n ,set n vm 是对 Vue 的代理，每次对 data 的读写都会被 Vue 监控，不论是读写 data 本身，还是读写 data 的代理 Vue 会在 data 变化的时候更新 UI  
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
@@ -228,48 +258,6 @@ let obj={'name':'Tom'}; obj['name'] = 'Jack'; Object.assign(obj,{p:1,p1:2}); let
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       js 的基本语法 什么是表达式和语句 var a = 1 + 3;  上面这行代码就是 js 的一条语句 1 + 3 叫做表达式（expression），值为 4 add(1,2)表达式的值为函数的返回值 语句以分号结尾，一个分号就表示一个语句结束 如果是逗号则表示这条语句还没结束 大小写敏感 空格和回车没有什么意义，对代码没有影响，但是 return 后面不要回车  它们的区别
  表达式一般都有值，语句可能有可能没有，例如只声明一个变量 语句一般会改变环境，例如声明或者赋值 上面两句并不是绝对的  标识符的规则 arg0 _tmp $elem π 你好  第一个字符可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_） 第二个及之后的字符除了上面的还可以用数字0~9  if else 语句 if (m === 3) { // 满足条件时，执行的语句 } else { // 不满足条件时，执行的语句 } while 循环 while (条件) 语句; // 或者 while (条件) 语句; for 循环 for (初始化表达式; 条件; 递增表达式) 语句 // 或者 for (初始化表达式; 条件; 递增表达式) { 语句 } 虽然大括号可以省略，尽量不要省略，以免代码有歧义
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linxueqing.github.io/posts/javascript%E8%AF%9E%E7%94%9F%E5%B9%B4%E9%89%B4/" class="link black dim">
-        JavaScript诞生年鉴
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      JavaScript 诞生年鉴  1995 年  布兰登·艾奇（Brendan Eich）加入网景公司，临危受命，用了十天时间为网景公司浏览器开发了 JavaScript 功能
- 1996 年 8 月  微软发布 IE3，支持 JScript
- 1996 年 11 月  网景向 ECMA 提交语言标准，由于版权问题，JS 语言不能叫 JavaScript，叫 ECMAScript
- 1997 年  第一版 ECMAScript 发布
- 1998 年  网景被收购，同年网景将浏览器开源（Firefox）
- 1999 年  第三版 ECMAScript 发布，这个版本目前使用最广泛
- 2001 年  IE 绑定 Windows XP 一起发布
- 2004 年  IE 全球市场占有率 80%，IE 却不兼容 W3C 标准，特别是 CSS，给了 Firefox 和 Chrome 机会
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linxueqing.github.io/posts/url/" class="link black dim">
-        Url
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      浅析 URL URL 包含哪几部分，每部分分别有什么作用  协议：是指规则的约定，例如 Web 使用一种名为 HTTP 的协议作为规范 域名或者 IP：服务器地址 端口号：服务器提供服务的一个号码 路径：带层次指向一个服务器的不同页面 查询字符串：指向一个页面的不同内容 锚点：指向同一个内容的不同位置的片段标识符，不会传给服务器  DNS 的作用是什么，nslookup 命令怎么用 DNS (Domain Name System) 域名系统，将方便用户记忆的域名地址 domain names 转换为 IP 数字串 IP addresses，从而在因特网 Internet 或者私有网络上找到特定的机器。 简单来说就是域名对应 IP 的一个服务。
-nslookup 是一种网络管理命令行工具，可用于查询 DNS 域名和 IP 地址。
-nslookup 询问服务器 IP 命令使用方法
- nslookup qq.com IP 的作用是什么，ping 命令怎么用 IP (Internet protocol) 互联网协议，约定了两件事：
- 如何定位一台设备，可以是电脑、手机、路由器。。。 如何封装数据报文，与其他设备交流  ping 命令使用方法
- ping qq.com 域名是什么，分别哪几类域名 域名是服务器 IP 地址对应的名字，方便使用
     </div>
   </div>
 </div>
