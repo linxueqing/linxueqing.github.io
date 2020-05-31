@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/" />
-<meta property="og:updated_time" content="2020-05-20T22:13:58+08:00" />
+<meta property="og:updated_time" content="2020-05-31T17:51:03+08:00" />
 <meta itemprop="name" content="以梦为马">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="以梦为马"/>
@@ -122,6 +122,30 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linxueqing.github.io/posts/vuesync/" class="color-inherit dim link">
+            Vue 中的 .sync 修饰符有什么用
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Vue 中的 .sync 修饰符有什么用  vue 的.sync 修饰符的功能是：当一个子组件改变了一个 prop 的值时，这个变化也会同步到父组件中所绑定。 .sync 修饰符其实就是一个语法糖  举个例子  子组件代码   &lt;!-- Child.vue --&gt; &lt;template&gt; &lt;div id=&quot;child&quot;&gt; &lt;div class=&quot;change&quot; v-if=&quot;show&quot;&gt;&lt;/div&gt; &lt;button class=&quot;btn&quot; @click=&quot;$emit('update:show', !show)&quot;&gt;点我试试&lt;/button&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &quot;Child&quot;, props: [&quot;show&quot;] }; &lt;/script&gt;  父组件  &lt;template&gt; &lt;div id=&quot;app&quot;&gt; &lt;Child :show.sync=&quot;valueChild&quot;/&gt; &lt;!-- A处 --&gt; &lt;Child :show=&quot;valueChild&quot; @update:show=&quot;valueChild = $event&quot;&gt;&lt;/Child&gt; &lt;!-- B处 --&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import Child from &quot;./Child&quot;; export default { name: &quot;App&quot;, components: { Child }, data() { return { valueChild: true }; } }; &lt;/script&gt; 
+        </div>
+          <a href="https://linxueqing.github.io/posts/vuesync/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://linxueqing.github.io/posts/vue2/" class="color-inherit dim link">
             Vue中computed和watch的区别
             </a>
@@ -162,42 +186,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linxueqing.github.io/posts/vue/" class="color-inherit dim link">
-            浅析 Vue 两个版本的区别和使用方法
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          浅析 Vue 两个版本的区别和使用方法   两个版本对应的文件名
-分别是 Vue 完整版（vue.js）和 Vue（vue.runtime.js ）非完整版
-  template 和 render 怎么用
-render 不需要编译器
-new Vue({ render(h){ return h('div',this.hi) } }) template 需要编译器
-new Vue({ template:'&lt;div&gt;{{hi}&lt;/div&gt;' })   如何用 codesandbox.io 写 Vue 代码
- 进入 codesandbox.io，不要登陆 点击 create sandbox 按钮，选择 vue 模板 可以直接修改保存 也可也 File-Export to Zip 导出你的 Vue 项目    
-        </div>
-          <a href="https://linxueqing.github.io/posts/vue/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linxueqing.github.io/posts/vue/" class="link black dim">
+              浅析 Vue 两个版本的区别和使用方法
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linxueqing.github.io/posts/mvc/" class="link black dim">
@@ -214,12 +214,6 @@ new Vue({ template:'&lt;div&gt;{{hi}&lt;/div&gt;' })   如何用 codesandbox.io 
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linxueqing.github.io/posts/sort/" class="link black dim">
               四种排序算法
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linxueqing.github.io/posts/%E9%80%92%E5%BD%92/" class="link black dim">
-              如何理解递归
             </a>
           </h2>
         

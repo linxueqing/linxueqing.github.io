@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linxueqing.github.io/posts/" />
-<meta property="og:updated_time" content="2020-05-20T22:13:58+08:00" />
+<meta property="og:updated_time" content="2020-05-31T17:51:03+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -91,6 +91,21 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linxueqing.github.io/posts/vuesync/" class="link black dim">
+        Vue 中的 .sync 修饰符有什么用
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Vue 中的 .sync 修饰符有什么用  vue 的.sync 修饰符的功能是：当一个子组件改变了一个 prop 的值时，这个变化也会同步到父组件中所绑定。 .sync 修饰符其实就是一个语法糖  举个例子  子组件代码   &lt;!-- Child.vue --&gt; &lt;template&gt; &lt;div id=&quot;child&quot;&gt; &lt;div class=&quot;change&quot; v-if=&quot;show&quot;&gt;&lt;/div&gt; &lt;button class=&quot;btn&quot; @click=&quot;$emit('update:show', !show)&quot;&gt;点我试试&lt;/button&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &quot;Child&quot;, props: [&quot;show&quot;] }; &lt;/script&gt;  父组件  &lt;template&gt; &lt;div id=&quot;app&quot;&gt; &lt;Child :show.sync=&quot;valueChild&quot;/&gt; &lt;!-- A处 --&gt; &lt;Child :show=&quot;valueChild&quot; @update:show=&quot;valueChild = $event&quot;&gt;&lt;/Child&gt; &lt;!-- B处 --&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import Child from &quot;./Child&quot;; export default { name: &quot;App&quot;, components: { Child }, data() { return { valueChild: true }; } }; &lt;/script&gt; 
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
@@ -242,22 +257,6 @@ $('div') //找到div元素 .find('h3') //选择其中的h3元素 .eq(2) //选择
       Js 对象基本用法 1：声明对象的两种语法 let obj1 = new Object({'name':'Jerry'}); //标准写法 let obj2={'name':'Tom'}; //常用写法 2：如何删除对象的属性 let obj={'name':'Tom','age':18}; delete obj['name']; //删除name属性 3：如何查看对象的属性 let obj={'name':'Tom'}; Object.keys(obj); //查看对象属性 Object.values(obj); //查看对象值 Object.entries(obj); //查看对象 console.dir(obj); //查看对象 只查看属性
 let obj={'name':'Tom'}; obj['name']; obj.name 4：如何修改或增加对象的属性 属性存在就是在修改，不存在就是在增加
 let obj={'name':'Tom'}; obj['name'] = 'Jack'; Object.assign(obj,{p:1,p1:2}); let common = {'国籍','中国'}; let person = Object.create(common); 5：&lsquo;name&rsquo; in obj 和 obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别  &lsquo;name&rsquo; in obj 判断obj对象是否存在name属性 obj.hasOwnProperty(&lsquo;name&rsquo;)判断name是不是自有属性  
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linxueqing.github.io/posts/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="link black dim">
-        Js的基本语法
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      js 的基本语法 什么是表达式和语句 var a = 1 + 3;  上面这行代码就是 js 的一条语句 1 + 3 叫做表达式（expression），值为 4 add(1,2)表达式的值为函数的返回值 语句以分号结尾，一个分号就表示一个语句结束 如果是逗号则表示这条语句还没结束 大小写敏感 空格和回车没有什么意义，对代码没有影响，但是 return 后面不要回车  它们的区别
- 表达式一般都有值，语句可能有可能没有，例如只声明一个变量 语句一般会改变环境，例如声明或者赋值 上面两句并不是绝对的  标识符的规则 arg0 _tmp $elem π 你好  第一个字符可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_） 第二个及之后的字符除了上面的还可以用数字0~9  if else 语句 if (m === 3) { // 满足条件时，执行的语句 } else { // 不满足条件时，执行的语句 } while 循环 while (条件) 语句; // 或者 while (条件) 语句; for 循环 for (初始化表达式; 条件; 递增表达式) 语句 // 或者 for (初始化表达式; 条件; 递增表达式) { 语句 } 虽然大括号可以省略，尽量不要省略，以免代码有歧义
     </div>
   </div>
 </div>
